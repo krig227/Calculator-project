@@ -1,0 +1,112 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    width: 500px;
+    height: 750px;
+    background-color: #ecf0f3;
+    border-radius: 30px;  
+    border: none;
+    box-shadow: inset 5px 5px 12px #ffffff,
+                 -5px -5px 12px rgba(0,0,0,.16),
+                 inset -5px -5px 12px #ffffff,
+                 5px 5px 12px rgba(0,0,0,.16); 
+}
+
+.main:hover{
+    animation: rotate 1.5s linear infinite;
+}
+
+.outer{
+    padding: 8px;
+    background: linear-gradient(#14ffe9,#ffeb3b,#ff00e0);
+    margin-bottom: 20px;
+    border-radius: 50px;
+}
+.headers{
+    background-color:black;
+    border-radius:50px;
+    color: white;
+    width:100%;
+    height:100%;
+    padding: 6px;
+}
+.outer:hover{
+    animation: rotate 1.5s linear infinite;
+}
+
+@keyframes rotate {
+    0%{
+        filter: hue-rotate(0deg);
+    }
+    100%{
+        filter: hue-rotate(360deg);
+    }
+    
+}
+
+button{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: none;
+    background-color: #ecf0f3;
+    box-shadow: inset 5px 0px 2px 1px #ffffff, 
+                inset -5px 0px 2px 1px rgba(0,0,0,.16);
+    cursor: pointer;
+    font-size: 20px;
+}
+
+button:hover{
+    background-color: aqua;
+}
+
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 50px;
+    background: linear-gradient(#14ffe9,#ffeb3b,#ff00e0);
+    height: 100%;
+    
+}
+
+input{
+    display: block;
+    margin:25px 25px;    
+    width: 90%;
+    height: 20%;
+    font-size: 100px;
+    background-color: #ecf0f3;
+    text-align: right;
+    color: rgb(70,70, 70);
+    border: none;
+    border-radius: 30px;   
+    box-shadow:  inset -5px -5px 12px #ffffff,
+                 inset 5px 5px 12px rgba(0,0,0,.16);
+    padding: 10px;
+}
+.button-row{
+    position: relative;
+    display: flex;
+    gap: 1rem;
+    padding-left: 26px;
+    padding-right: 26px;
+}
+
+.equals-calculate{
+    border-radius: 50px;
+    width: 200px;
+}
+
+
+
+
+
